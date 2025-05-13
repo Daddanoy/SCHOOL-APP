@@ -1,5 +1,5 @@
 import {Routes, Route,} from 'react-router-dom'
-
+import{ React} from 'react'
 
 //Import pages
 import Area from './pages/Area'

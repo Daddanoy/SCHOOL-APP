@@ -1,4 +1,26 @@
+# ========================
+# Node/React Specific
+# ========================
+# Dependency directories
+node_modules/
+/.pnp
+.pnp.js
+
+# Build files
+dist/
+dist-ssr/
+build/
+.next/
+out/
+.build/
+
+# Cache
+.cache/
+.turbo/
+
+# ========================
 # Logs
+# ========================
 logs
 *.log
 npm-debug.log*
@@ -7,18 +29,45 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# ========================
+# Environment
+# ========================
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env*.local
 
-# Editor directories and files
+# ========================
+# Editor/IDE
+# ========================
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# ========================
+# System Files
+# ========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ========================
+# Testing
+# ========================
+coverage/
+.nyc_output/
+
+# ========================
+# Optional
+# ========================
+# Uncomment if using these:
+# *.local  # General local files
+# .parcel-cache/
+# .serverless/
