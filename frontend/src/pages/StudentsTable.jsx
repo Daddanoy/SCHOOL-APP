@@ -130,12 +130,12 @@ setCurrentTerm(e)
     <>
      <div className="w-full bg-base-100">
       {/* Responsive Term Selector */}
-      <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 my-4">
+      <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 my-4 ">
         {['autumn', 'spring', 'summer'].map((term, key) => (
           <button 
             onClick={() => handleSelectTerm(term)} 
             key={key} 
-            className={`shadow-md px-3 py-2 sm:px-5 sm:py-3 rounded-lg capitalize 
+            className={`shadow-md px-3 py-2 sm:px-5 sm:py-3 rounded-lg capitalize hover:cursor-pointer
                         ${currentTerm === term ? 'bg-primary text-primary-content' : 'bg-base-200'} 
                         transition-colors w-auto text-sm sm:text-base`}
           >
@@ -159,7 +159,7 @@ setCurrentTerm(e)
     >
       <button
         onClick={() => toggleOpen(row.studentId)}
-        className="w-full bg-base-300 p-3 font-bold text-lg border-b border-base-content/20 flex justify-between items-center"
+        className="w-full bg-base-300 p-3 font-bold text-lg border-b border-base-content/20 flex justify-between items-center cursor-pointer"
       >
         {row.studentName}
         {openStudentId === row.studentId ? <ChevronUp size={20} /> : <ChevronDown size={20} />}

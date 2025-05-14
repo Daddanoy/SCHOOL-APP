@@ -40,7 +40,7 @@ function Home() {
         </button>
         
       ))}
-      <button onClick={studentTable} className=" bg-base-200 rounded-lg hover:bg-base-500  px-6 py-12 text-xl capitalize max-w-4xl mx-auto w-40 sm:w-140">Student-Table</button>
+      <button onClick={studentTable} className=" bg-base-200 rounded-lg hover:bg-base-500  px-6 py-12 text-xl capitalize max-w-4xl mx-auto w-40 sm:w-140 cursor-pointer hover:bg-base-100 hover:border-base-300 hover:border">Student-Table</button>
     </div>
   )
 }
