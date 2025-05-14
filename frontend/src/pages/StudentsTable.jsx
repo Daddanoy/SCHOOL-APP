@@ -184,16 +184,19 @@ setCurrentTerm(e)
   ))}
 </div>
           {/* Desktop View: Table */}
-          <div className="hidden md:block">
-            <div className="overflow-x-auto rounded-lg shadow-md">
+          <div className="hidden md:block ">
+            <div className="overflow-auto rounded-lg shadow-md style={{ maxHeight: '70vh' }}' }}">
               <table className="w-full border-collapse">
                 <thead>
-                  <tr className="bg-base-300">
-                    <th className="p-3 text-left border-b border-base-content/20">Student</th>
+                  <tr className="bg-base-300 sticky top-0 z-10 ">
+                    {/* Student Column Header */}
+                    <th className=" p-3 text-left border-b border-base-content/20  ">Student</th>
+
+                    {/* Question Headers */}
                     {questionTexts.map(text => (
                       <th
                         key={text}
-                        className="p-3 text-center border-b border-base-content/20"
+                        className="sticky top-0 z-10 p-3 text-center border-b border-base-content/20 bg-base-300  "
                       >
                         {text}
                       </th>
@@ -202,10 +205,14 @@ setCurrentTerm(e)
                 </thead>
                 <tbody className="bg-base-200">
                   {tableRows.map(row => (
-                    <tr key={row.studentId} className="hover:bg-base-300">
-                      <td className="p-3 font-medium border-b border-base-content/10">
+                    <tr key={row.studentId} className="hover:bg-base-300 ">
+
+                           {/* Student Name Cell */}
+                      <td className="sticky left-0 z-10 p-3 font-medium border-b border-base-content/10 bg-base-200">
                         {row.studentName}
                       </td>
+
+                      {/* Question Cells */}
                       {questionTexts.map(text => (
                         <td
                           key={`${row.studentId}-${text}`}

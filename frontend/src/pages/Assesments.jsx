@@ -36,7 +36,7 @@ export default function Assessments() {
     
     <div className="container mx-auto p-6  ">
       <button 
-      className="bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-4 rounded mt-2 ml-22 top-0 left-0 fixed"
+      className="bg-gray-300 hover:bg-gray-400 text-black font-bold  sm:py-2 sm:px-4 rounded mt-2 ml-2 py-1 px-2  "
       onClick={handleBackButton}
     >
       Back to Students

@@ -28,11 +28,11 @@ function Home() {
 
   return (
     <div className="flex flex-col space-y-8  items-center min-h-screen ">
-      <h1 className=" p-8 text-3xl">ProGrade</h1>
-      {['autumn', 'spring', 'summer'].map(term=>(
+      {/* <h1 className=" p-8 text-3xl">ProGrade</h1> */}
+      {['autumn', 'spring', 'Summer(soon)'].map(term=>(
         <button
         key={term}
-        className="shadow-xl  rounded-lg hover:bg-base-300  px-6 py-12 text-xl capitalize max-w-4xl mx-auto w-40 sm:w-140 cursor-pointer"
+        className="shadow-xl  rounded-lg hover:bg-base-300  px-6 py-12 text-xl capitalize max-w-4xl mx-auto w-40 sm:w-140 cursor-pointe flex-wrap"
         onClick={()=> handleTermSelect(term)}
         >
           {term} Term

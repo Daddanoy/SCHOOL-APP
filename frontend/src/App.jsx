@@ -8,6 +8,7 @@ import Home from './pages/Home'
 import Students from './pages/Students'
 import StudentsTable from './pages/StudentsTable'
 import HomeButton from './components/HomeButton'
+import Navbar from './components/Navbar'
 
 
 import './App.css'
@@ -20,10 +21,14 @@ function App() {
  
   return (
     <>
-    <div className='ml-10 py-2'>
+    {/* <div className='ml-10 py-2'>
     <HomeButton/>
     </div>
-    
+     */}
+
+     <div className="py-2" >
+      <Navbar/>
+     </div>
     
     
     <Routes>
