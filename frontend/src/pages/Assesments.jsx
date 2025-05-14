@@ -22,7 +22,7 @@ export default function Assessments() {
   }
   
   const handleAnswer = (questionId, answer) => {
-    console.log("API Call Triggered:", questionId, answer); // Debugging log
+    // console.log("API Call Triggered:", questionId, answer); // Debugging log
     saveAnswer(questionId, answer);
   };
 

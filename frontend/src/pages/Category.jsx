@@ -25,12 +25,12 @@ useEffect(()=>{
     filteredQuestions.map(question=> question.category)
   )];//this equals maths and scienece for example
   setCategories(uniqueCategories)
-  console.log(uniqueCategories)
+  // console.log(uniqueCategories)
   
 },[filteredQuestions,selectedTerm,selectedArea,navigate,setArea])
 
-console.log(selectedArea)// this should equal math and science
-console.log(filteredQuestions)
+// console.log(selectedArea)// this should equal math and science
+// console.log(filteredQuestions)
 
 const handleBackButton=()=>{
 setTerm(selectedTerm)
